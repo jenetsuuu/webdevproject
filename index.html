@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-DEV PROJECT</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/jenni.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                        <li><a href="#header">HOME</a></li>
+                        <li><a href="#aboutme">ABOUT ME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#info">CONTACT</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>BSIT-3A Student</p>
+                <h1>Hi, this is <span>Jenet<br>Langamen</span> from<br>BISU-Balilihan Campus</h1>
+            </div>
+        </div>
+    </div>
+   <!-- -----------about------- -->
+<div id="aboutme">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/jen.jpg" alt="jenet">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <br>
+                <br>
+                <p>
+                    I'm Jenet Langamen, 20 years old, a third-year BSIT student at BISU-Balilihan Campus. My MBTI is INFP-T. My usual ritual is perpetually hoping to pass my courses with a grade point average not higher than 3.0.<br>
+                    <br>While I struggle with writing even the simplest programs and often feel ashamed of my limitations, I do understand programming concepts to a certain extent. I'm more comfortable with graphic design, but I'm determined to improve my programming skills as it's one of my life goals.<br>
+                    <br>As I'm a member of the Campus Access, the school publication of BISU-Balilihan Campus, I'm more into writing proses and poetries than writing codes on IDEs.<br><br>
+                </p>
+                <div class="tabtitle">
+                    <p class="tablinks activelink" onclick="opentab('skills')">Skills</p>
+                    <p class="tablinks" onclick="opentab('experience')">Experience</p>
+                    <p class="tablinks" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tabcontents activetab" id="skills">
+                    <ul>
+                        <li><span>Editing</span><br>Graphic Designing</li>
+                        <li><span>Writing</span><br>Proses and Poetries</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="experience">
+                    <ul>
+                        <li><span>None</span><br>I have only experienced doing editing and programming activities at school.</li>
+                    </ul>
+                </div>
+                <div class="tabcontents" id="hobbies">
+                    <ul>
+                        <li><span>Reading</span><br>Books, Comics</li>
+                        <li><span>Watching</span><br>Movies, Anime</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------projects------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle3">My Projects</h1>
+        <div class="worklist">
+            <div class="work">
+                <img src="images/one.jpg" alt="one">
+                <div class="layer">
+                    <h3>Project 1:<br>JAVA PROJECT</h3>
+                    <p><br>When I was in my second year, Sir Ale has given us a project in Java Programming, I made a simple ATM program.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/two.jpg" alt="two">
+                <div class="layer">
+                <h3>Project 2:<br>POSTER-MAKING PROJECT</h3>
+                    <p><br>I was in my second year when Ma'am Agoc has given us a project where we should make a poster, and I made a concert poster for a K-pop idol I admire.</p>
+            </div>
+        </div>
+            <div class="work">
+                <img src="images/three.jpg" alt="three">
+                <div class="layer">
+                <h3>Project 3:<br>DATABASE PROJECT</h3>
+                    <p><br>When we were on our second year, Ma'am Agoc gave a project in her Database subject. We were tasked to make a program in Java where it should connect to a database in MySQL. It was hard, but we were able to make it.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- -----contact------ -->
+ <div id="info">
+    <div class="container">
+        <div class="row">
+            <div class="contleft">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> jenet.langamen@bisu.edu.ph</p>
+                <p><i class="fa-solid fa-phone"></i> 09389306388</p>
+                <div class="socicon">
+                    <a href="https://www.facebook.com/jenet.langamen.3"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jenetsuuu/profilecard/?igsh=MTZ2YzBndTY4aTI1aQ=="><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contright">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span class="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <footer>
+            <p>&copy; 2024 WEB-DEV PROJECT. All Rights Reserved.</p>
+        </footer>
+    </div>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
